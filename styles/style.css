@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style: none;
+}
+
+ol li {
+    margin-bottom: 20px;
+}
+
+body {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "ヒラギノ角ゴ ProN", Meiryo, sans-serif;
+    /* background: linear-gradient(to bottom, rgb(105, 255, 212), rgb(119, 179, 84)); */
+}
+
+header {
+    margin: 0;
+    position: fixed;
+    z-index: 20;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+header h1 {
+    margin: 0;
+    max-width: 250px;
+    /* margin: 20px auto; */
+}
+
+
+
+h2 {
+    border-bottom: 4px white solid;
+    margin-bottom: 20px;
+}
+
+/* header MV */
+
+header img {
+    width: 170px;
+    margin: 0 auto;
+}
+
+dd {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-top: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    width: 100%;
+}
+
+/* button{
+    padding:  5px 30px;
+    border: 2px solid black;
+    
+} */
+
+button[type="submit"] {
+    padding: 5px 30px;
+    border: 2px solid black;
+    background-color: #3eb6bd;
+    display: block;
+    margin-left: auto;
+}
+
+
+
+
+/* .main-visual-area img {
+    width: 100%;
+    position: relative;
+} */
+
+
+.main-visual-area {
+    position: relative;
+    z-index: -1;
+}
+
+.main-visual-area::after {
+    content: "THIS IS BAIKAL";
+    display: block;
+    border: 10px solid rgb(86, 139, 177);
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    text-shadow: 5px 5px 4px black;
+    font-size: 64px;
+    z-index: 2;
+    bottom: 50%;
+    outline: 10px solid rgb(98, 153, 193);
+    outline-offset: -15px;
+    left: calc(50% - 260px);
+    background: linear-gradient(to left bottom, gray, white);
+}
+
+/* section 共通 */
+section {
+    width: 100%;
+}
+
+.section-inner {
+    padding: 40px 0;
+    margin: 0 auto;
+    /* width: 70%; */
+}
+
+.background {
+    background: linear-gradient(to top, #FFFFFF, #A5C8F0, #003B8B);
+}
+
+/* section:nth-of-type(1) {
+    background-color: #dec200;
+}
+
+section:nth-of-type(2) {
+    background-color: #3eb6bd;
+}
+
+section:nth-of-type(3) {
+    background-color: #3d5a6d;
+} */
+
+
+
+.section-inner {
+    padding: 20px 30px;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+form dt {
+    position: relative;
+    /* margin-bottom: 20px; */
+}
+
+form dt,
+form label {
+    color: gray;
+}
+
+form dt::before {
+    content: "◆";
+    position: absolute;
+    left: -20px;
+    font-size: 24px;
+    top: calc(50% - 18px);
+    color: black;
+
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: .5em;
+    font-size: 1.1em;
+}
+
+input[type="radio"] {
+    width: 1em;
+    margin-left: 24px;
+    margin-right: 4px;
+}
+
+
+
+/* FOOTER */
+
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: .9em;
+}
+
+
+address,
+small {
+    margin-bottom: 10px;
+    color: #2f4858;
+}
+
+address {
+    font-style: normal;
+}
+
+
+
+@media (max-width: 767px) {}
